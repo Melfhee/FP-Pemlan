@@ -162,7 +162,7 @@ int search2(struct pasien pa[30],int n,int i,char nama[20]){
 		flag++;
 		
 	}else{
-		if (i<n){
+		if (i<n){ 
 			return search2(pa,n,(i+1),nama);
 		}
 	}
@@ -305,6 +305,9 @@ int search3(struct pasien pa[30],int n,int i,int no){
 									break;
 								}
 						}
+						break;
+			case 5: printf("Terima Kasih\n iqbal alfiansyah 18081010123\n Melinda Shilatil Fauziyah 18081010122");
+				break;
 			}
 		}
 }
