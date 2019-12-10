@@ -88,9 +88,94 @@ void bubblesortjp(struct pasien pa[30],int n){
 					}
 						
 }
+
+void bubblesortnk(struct pasien pa[30],int n){
+	int loop1,loop2,i,j;
+	struct pasien temp;
+		for(loop1=0;loop1<n-1;loop1++){
+							for(loop2=0;loop2<n-loop1-1;loop2++){
+								if(pa[loop2].nomor_kamar>pa[loop2+1].nomor_kamar){
+								
+									temp=pa[loop2];
+									pa[loop2]=pa[loop2+1];
+									pa[loop2+1]=temp;
+								}
+							}
+					}
+						
+}
+
+int search1(struct pasien pa[30],int n,int i,int id){
+	int flag=-1;
+	if(pa[i].id==id){
+		printf("Id Pasien		: %d\n",pa[i].id);
+		printf("Nama Pasien		: %s\n",pa[i].nama);
+		printf("Penyakit Pasien	: %s\n",pa[i].penyakit);
+		printf("Jenis Kamar		: %s\n",pa[i].jenis_kamar);
+		printf("Nomor Kamar		: %d\n",pa[i].nomor_kamar);
+		printf("Tanggal Masuk	: %s\n",pa[i].date);
+		flag++;
+	}else{
+		if (i<n){
+			return search1(pa,n,(i+1),id);
+		}
+	}
+	
+	if(flag==-1){
+		printf("tidak ada");
+	}
+	
+}
+
+int search2(struct pasien pa[30],int n,int i,char nama[20]){
+	int flag=-1;
+	
+	if(strcmp(pa[i].nama,nama)==0){
+		
+		printf("Id Pasien		: %d\n",pa[i].id);
+		printf("Nama Pasien		: %s\n",pa[i].nama);
+		printf("Penyakit Pasien	: %s\n",pa[i].penyakit);
+		printf("Jenis Kamar		: %s\n",pa[i].jenis_kamar);
+		printf("Nomor Kamar		: %d\n",pa[i].nomor_kamar);
+		printf("Tanggal Masuk	: %s\n",pa[i].date);
+		flag++;
+		
+	}else{
+		if (i<n){
+			return search2(pa,n,(i+1),nama);
+		}
+	}
+	
+	if(flag==-1){
+		printf("tidak ada");
+	}
+	
+}
+
+
+int search3(struct pasien pa[30],int n,int i,int no){
+	int flag=-1;
+	
+	if(pa[i].nomor_kamar==no){
+		view(i,pa);
+		flag++;
+		
+	}else{
+		if (i<n){
+			return search3(pa,n,(i+1),no);
+		}
+	}
+	
+	if(flag==-1){
+		printf("tidak ada");
+	}
+}
+
+
  main(){
  	struct pasien pa[30];
-	int menu =-1, i=0, urutan;
+	int menu =-1, i=0, urutan,cari1;
+	char cari2[20];
 	while(menu!=5){
 	printf("=======================================\n");
 	printf("    APLIKASI PENDATAAN RUMAH SAKIT \n");
@@ -149,10 +234,50 @@ void bubblesortjp(struct pasien pa[30],int n){
 							case 4: bubblesortjk(pa,i);
 									view(i,pa);
 									break;
-								
-							break;
+							case 5: bubblesortnk(pa,i);
+									view(i,pa);
+									break;
+							default : printf("Pilih 1,2,3,4 atau 5");
+									  break;
+				
 				}
 			}
+				break;
+			
+			case 3 :
+					break;
+			
+			case 4 :
+					if(i==0){
+					printf("\ndata kosong");
+					}else{
+						printf("=======================================\n");
+						printf("   Searching Data Pasien Berdasarkan \n");
+						printf("=======================================\n");
+						printf(" 1. ID Pasien \n");
+						printf(" 2. Nama Pasien\n");
+						printf(" 3. Nomor Kamar \n");
+						printf("======================================\n");
+						printf(" Masukkan Pilihan : ");
+						scanf("%d",&urutan);
+						printf ("======================================\n");
+						switch(urutan){
+							case 1 : printf("Masukkan ID yang Anda Cari : ");
+									 scanf("%d",&cari1);
+									 search1(pa,i,0,cari1);
+									 break;
+							case 2 :
+									printf("Masukkan nama yang Anda Cari : ");
+									scanf("%s",&cari2);
+									search2(pa,i,0,cari2);
+									break;
+							case 3 : 
+									printf("Masukkan nomor kamar yang Anda Cari : ");
+									scanf("%d",&cari1);
+									search3(pa,i,0,cari1);
+									break;
+								}
+						}
 			}
 		}
 }
