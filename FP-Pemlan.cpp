@@ -104,6 +104,27 @@ void bubblesortnk(struct pasien pa[30],int n){
 					}
 						
 }
+void update(struct pasien pa[30],int n,int u){
+	int i;
+	for(i=0;i<n;i++){
+		if(pa[i].id==u){
+			printf("Masukkan Id Pasien			: ");
+			scanf("%d",&pa[i].id);
+			printf("\nMasukan Nama Pasien		: ");
+			scanf("%s",&pa[i].nama);	
+			printf("\nMasukan Penyakit Pasien	: ");
+			scanf("%s",&pa[i].penyakit);
+			printf("\nMasukan Nomor Kamar Pasien: ");
+			scanf("%d",&pa[i].nomor_kamar);
+			printf("\nMasukan Jenis Kamar		: ");
+			scanf("%s",&pa[i].jenis_kamar);
+			printf("\nMasukan Tanggal Masuk		: ");
+			scanf("%s",&pa[i].date);
+		}
+	}
+	
+}
+
 
 int search1(struct pasien pa[30],int n,int i,int id){
 	int flag=-1;
@@ -172,9 +193,10 @@ int search3(struct pasien pa[30],int n,int i,int no){
 }
 
 
+
  main(){
  	struct pasien pa[30];
-	int menu =-1, i=0, urutan,cari1;
+	int menu =-1, i=0, urutan,cari1,u;
 	char cari2[20];
 	while(menu!=5){
 	printf("=======================================\n");
@@ -244,8 +266,13 @@ int search3(struct pasien pa[30],int n,int i,int no){
 			}
 				break;
 			
-			case 3 :
-					break;
+			case 3 : 
+				printf("Masukkan ID yang ingin di ubah: ");
+				scanf("%d",&u);
+				
+				update(pa,i,u);
+				
+				break;
 			
 			case 4 :
 					if(i==0){
