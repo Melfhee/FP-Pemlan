@@ -177,8 +177,13 @@ int search2(struct pasien pa[30],int n,int i,char nama[20]){
 int search3(struct pasien pa[30],int n,int i,int no){
 	int flag=-1;
 	
-	if(pa[i].nomor_kamar==no){
-		view(i,pa);
+	if(pa[i].nomor_kamar==no){		
+		printf("Id Pasien		: %d\n",pa[i].id);
+		printf("Nama Pasien		: %s\n",pa[i].nama);
+		printf("Penyakit Pasien	: %s\n",pa[i].penyakit);
+		printf("Jenis Kamar		: %s\n",pa[i].jenis_kamar);
+		printf("Nomor Kamar		: %d\n",pa[i].nomor_kamar);
+		printf("Tanggal Masuk	: %s\n",pa[i].date);
 		flag++;
 		
 	}else{
