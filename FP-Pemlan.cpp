@@ -11,6 +11,40 @@ struct pasien{
 	char jenis_kamar[4];
 	char date[10];
 };
+
+
+
+void bubblesort(struct pasien pa[30],int n){
+	int loop1,loop2,i,j;
+	struct pasien temp;
+		for(loop1=0;loop1<n-1;loop1++){
+							for(loop2=0;loop2<n-loop1-1;loop2++){
+								if(pa[loop2].id>pa[loop2+1].id){
+								
+									temp=pa[loop2];
+									pa[loop2]=pa[loop2+1];
+									pa[loop2+1]=temp;
+								}
+							}
+					}
+						
+}
+
+void view(int n, struct pasien pa[]){
+	int i;
+		printf("===================================\n");
+		printf("		Daftar Data Pasien \n");
+		printf("===================================\n");
+	for(i=0;i<n;i++){
+		printf("Id Pasien		: %d\n",pa[i].id);
+		printf("Nama Pasien		: %s\n",pa[i].nama);
+		printf("Penyakit Pasien	: %s\n",pa[i].penyakit);
+		printf("Jenis Kamar		: %s\n",pa[i].jenis_kamar);
+		printf("Nomor Kamar		: %d\n",pa[i].nomor_kamar);
+		printf("Tanggal Masuk	: %s\n",pa[i].date);
+		printf("----------------------------------\n");
+	}
+}
  main(){
  	struct pasien pa[30];
 	int menu =-1, i=0, urutan;
@@ -60,7 +94,10 @@ struct pasien{
 						scanf("%d",&urutan);
 						printf ("======================================\n");
 						switch(urutan){
-							case 1: 
+							case 1: bubblesort(pa,i);
+									view(i,pa);
+									break;
+							
 							break;
 				}
 			}
