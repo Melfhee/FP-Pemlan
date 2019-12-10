@@ -45,6 +45,49 @@ void view(int n, struct pasien pa[]){
 		printf("----------------------------------\n");
 	}
 }
+void bubblesortnama(struct pasien pa[30],int n){
+	int loop1,loop2,i,j;
+	struct pasien temp;
+		for(loop1=0;loop1<n-1;loop1++){
+							for(loop2=0;loop2<n-loop1-1;loop2++){
+								if(strcmp(pa[loop2].nama,pa[loop2+1].nama)>0){
+									temp=pa[loop2];
+									pa[loop2]=pa[loop2+1];
+									pa[loop2+1]=temp;
+								}
+							}
+					}
+						
+}
+
+void bubblesortjk(struct pasien pa[30],int n){
+	int loop1,loop2,i,j;
+	struct pasien temp;
+		for(loop1=0;loop1<n-1;loop1++){
+							for(loop2=0;loop2<n-loop1-1;loop2++){
+								if(strcmp(pa[loop2].jenis_kamar,pa[loop2+1].jenis_kamar)>0){
+									temp=pa[loop2];
+									pa[loop2]=pa[loop2+1];
+									pa[loop2+1]=temp;
+								}
+							}
+					}
+						
+}
+void bubblesortjp(struct pasien pa[30],int n){
+	int loop1,loop2,i,j;
+	struct pasien temp;
+		for(loop1=0;loop1<n-1;loop1++){
+							for(loop2=0;loop2<n-loop1-1;loop2++){
+								if(strcmp(pa[loop2].penyakit,pa[loop2+1].penyakit)>0){
+											temp=pa[loop2];
+											pa[loop2]=pa[loop2+1];
+											pa[loop2+1]=temp;
+									}
+							}
+					}
+						
+}
  main(){
  	struct pasien pa[30];
 	int menu =-1, i=0, urutan;
@@ -97,7 +140,16 @@ void view(int n, struct pasien pa[]){
 							case 1: bubblesort(pa,i);
 									view(i,pa);
 									break;
-							
+							case 2: bubblesortnama(pa,i);
+									view(i,pa);
+									break;
+							case 3: bubblesortjp(pa,i);
+									view(i,pa);
+									break;
+							case 4: bubblesortjk(pa,i);
+									view(i,pa);
+									break;
+								
 							break;
 				}
 			}
