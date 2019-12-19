@@ -2,7 +2,6 @@
 MATA KULIAH PEMROGRAMAN LANJUT A
     “APLIKASI PENDATAAN RUMAH SAKIT”</b></center>
 <p></p>  
-![alt text](https://1.bp.blogspot.com/-rS-JXNONRrQ/Wi5z359a49I/AAAAAAAAABQ/7ly_bZ82Rb0c0kuivUWnDRwgP8F4Z73PACLcBGAs/w1200-h630-p-k-no-nu/Logo_Upn_Jatim_Baru.png)
 <center><b>KELOMPOK  17:</b></center>
 <center><b>MELINDA SHILATIL FAUZIYAH	[18081010122]</b></center>
 <center><b>IQBAL ALFIANSYAH 	     	[18081010123]</b></center>
