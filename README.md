@@ -7,11 +7,11 @@
 <p><center><b>IQBAL ALFIANSYAH 	     	[18081010123]</b></center></p>  
 <p></p>  
 <p></p>  
-<center><b>PROGRAM STUDI TEKNIK INFORMATIKA</b></center> 
-<center><b>FAKULTAS ILMU KOMPUTER</b></center>
-    <center><b>UNIVERSITAS PEMBANGUNAN NASIONAL “VETERAN” </b></center>
-    <center><b>JAWA TIMUR</b></center>
-    <center><b>2019</b></center>
+<p><center><b>PROGRAM STUDI TEKNIK INFORMATIKA</b></center> 
+<p><center><b>FAKULTAS ILMU KOMPUTER</b></center>
+    <p><center><b>UNIVERSITAS PEMBANGUNAN NASIONAL “VETERAN” </b></center></p> 
+   <p> <center><b>JAWA TIMUR</b></center></p> 
+   <p> <center><b>2019</b></center></p> 
     <p></p>
     <p></p>
     <p></p>
