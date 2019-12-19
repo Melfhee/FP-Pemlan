@@ -1,6 +1,6 @@
-<center><b>LAPORAN RESMI FINAL PROJECT 
-MATA KULIAH PEMROGRAMAN LANJUT A
-    “APLIKASI PENDATAAN RUMAH SAKIT”</b></center>
+<center><b>LAPORAN RESMI FINAL PROJECT </b></center>
+<center><b>MATA KULIAH PEMROGRAMAN LANJUT A</b></center>
+<center><b>“APLIKASI PENDATAAN RUMAH SAKIT”</b></center>
 <p></p>  
 <center><b>KELOMPOK  17:</b></center>
 <center><b>MELINDA SHILATIL FAUZIYAH	[18081010122]</b></center>
@@ -21,22 +21,7 @@ MATA KULIAH PEMROGRAMAN LANJUT A
 <p></p>
 <div class="text-right">Surabaya, 09 Desember 2019</div>
 <div class="text-right">Kelompok 17,</div>
-
-
-
-	    
-
-
-
-
-
-
-
-
-
-
-
-	
+<p></p>	
 <center><b>DAFTAR  ISI</b></center>
 
 KATA PENGANTAR..........................
