@@ -1,10 +1,10 @@
-<center><b>LAPORAN RESMI FINAL PROJECT </b></center>
-<center><b>MATA KULIAH PEMROGRAMAN LANJUT A</b></center>
-<center><b>“APLIKASI PENDATAAN RUMAH SAKIT”</b></center>
+<center><b>LAPORAN RESMI FINAL PROJECT </b></center></p>  
+<p><center><b>MATA KULIAH PEMROGRAMAN LANJUT A</b></center></p>  
+<p><center><b>“APLIKASI PENDATAAN RUMAH SAKIT”</b></center></p>  
 <p></p>  
-<center><b>KELOMPOK  17:</b></center>
-<center><b>MELINDA SHILATIL FAUZIYAH	[18081010122]</b></center>
-<center><b>IQBAL ALFIANSYAH 	     	[18081010123]</b></center>
+<p><center><b>KELOMPOK  17:</b></center></p>  
+<p><center><b>MELINDA SHILATIL FAUZIYAH	[18081010122]</b></center></p>  
+<p><center><b>IQBAL ALFIANSYAH 	     	[18081010123]</b></center></p>  
 <p></p>  
 <p></p>  
 <center><b>PROGRAM STUDI TEKNIK INFORMATIKA</b></center> 
