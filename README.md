@@ -9,6 +9,8 @@ Final project yang kami kerjakan dengan judul â€œAplikasi Pendataan Rumah Sakitâ
 <li> Dapat menuliskan source code yang efisien.</li>
 <li> Dapat mendapatkan informasi pasien dengan lebih mudah dan cepat.</li>
 <li> Dapat membuat program yang memiliki lebih fungsional.</li>
+<h3>Kesimpulan</h3>
+Kesimpulan yang dapat kita ambil adalah dengan berbagai konsep sorting dan searching dan ditambah konsep struct kami bisa membuat program sistem informasi sederhana yang dapat mempermudah mengolah data. dengan konsep yang kami terapkan lebih mempermudah dan lebih mengefisienkan jalannya program karena dengan konsep struct yang hampir sama dengan konsep Object di java sangat mempermudah dan mempersingkat kode. dan penggunaan searching dengan metode rekursif yang sangat membuka wawasan dan membawa pembelajaran baru. Program ini juga mempermudah dalam pengelolaan data pasien yang berada di rumah sakit dengan fungsi CRU (sreate, read, update) lalu ada fungsi pengurutan, dan searching yang sangat mempermudah pencarian.
 
 <h2>Kelompok 17</h2>
   <table boder="1">
